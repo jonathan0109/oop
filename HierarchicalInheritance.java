@@ -14,23 +14,22 @@ class Dog extends Animal {
 	}
 }
 
-class Puppy extends Dog {
+class Cat extends Animal {
 
-	void weep(){
+	void meow() {
 	
-		System.out.println("weeping...");
-	}	
+		System.out.println("meowing...");
+	}
 }
 
-public class MultilevelInheritance {
+public class HierarchicalInheritance {
 
 	public static void main(String[] args){
 	
-		Puppy d = new Puppy();
+		Cat c = new Cat();
 
-		d.weep();
-		d.bark();
-		d.eat();
+		c.meow();
+		c.eat();
 	}
 }
 
