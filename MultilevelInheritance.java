@@ -14,12 +14,21 @@ class Dog extends Animal {
 	}
 }
 
-public class SingleInheritance {
+class Puppy extends Dog {
+
+	void weep(){
+	
+		System.out.println("weeping...");
+	}	
+}
+
+public class MultilevelInheritance {
 
 	public static void main(String[] args){
 	
-		Dog d = new Dog();
+		Puppy d = new Puppy();
 
+		d.weep();
 		d.bark();
 		d.eat();
 	}
